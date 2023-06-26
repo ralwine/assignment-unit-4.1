@@ -18,17 +18,20 @@ function helloName(Biscuit) {
   return 'Hello, Biscuit!';
 }
 // Remember to call the function to test
-console.log('Hello,' + ' ' + helloName);
+console.log('Test - should say "Hello, Biscuit!"', helloName());
 
 // 3. Function to add two numbers together & return the result
-function addNumbers(firstNumber) {
+function addNumbers(firstNumber, secondNumber) {
+  let answer = firstNumber + secondNumber;
+  return answer;
   // return firstNumber + secondNumber;
 }
 
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree() {
-
+function multiplyThree(firstNumber, secondNumber, thirdNumber) {
+  let answer = firstNumber * secondNumber * thirdNumber;
+  return answer;
 }
 
 

@@ -55,6 +55,14 @@ console.log('isPositive - should say false', isPositive(-3));
 //    array is empty, return `undefined`.
 function getLast(array) {
 
+  for (i = 0; i < array.length; i++){
+  if (i = [array.length -1]){
+    return [i];
+  }
+  else {
+    return 'undefined';
+  }
+  }
 }
 
 // 7. Function to find a value in an array. Return true if the 

@@ -11,7 +11,6 @@ function hello() {
 // Call the function to test
 console.log('Test - should say "Hello World!"', hello());
 
-
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 function helloName(Biscuit) {
@@ -39,9 +38,11 @@ function multiplyThree(firstNumber, secondNumber, thirdNumber) {
 //    or greater than zero, and false otherwise
 function isPositive(number) {
   if (number > 0) {
-    return;
+    return 'isPositive - should say true';
+  } 
+  else if (number <= 0) {
+    return 'isPositive - should say false';
   }
-  return;
 }
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome

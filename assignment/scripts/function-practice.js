@@ -63,24 +63,24 @@ function getLast(array) {
     }
   }
 }
-console.log(getLast, ([1, 4, 8]));
-console.log(getLast, ([]));
+console.log(getLast([1, 4, 8]));
+console.log(getLast([]));
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 function find(value, array) {
   for (i = 0; i < array.length; i++) {
-    if (array[i] === value) {
+    console.log(value, array);
+    if (value === array[i]) {
       return true;
     }
-    else {
-      return false;
-    }
   }
+  return false;
 }
 
-console.log(find, ([cat, dog, mouse]));
-console.log(find, ([cat]));
+console.log(['cat', 'dog', 'bird']);
+console.log(find('cat'));
+
 
 // ----------------------
 // Stretch Goals

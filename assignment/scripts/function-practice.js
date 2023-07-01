@@ -71,16 +71,15 @@ console.log(getLast([]));
 function find(value, array) {
   for (i = 0; i < array.length; i++) {
     console.log(value, array);
-    if (value === array[i]) {
+    if (value[i] === array[i]) {
       return true;
     }
-  }
   return false;
+  }
 }
 
-console.log(['cat', 'dog', 'bird']);
-console.log(find('cat'));
-
+console.log(find(['cat'],['cat', 'dog', 'bird']));
+console.log(find([4],[1,2,3]));
 
 // ----------------------
 // Stretch Goals

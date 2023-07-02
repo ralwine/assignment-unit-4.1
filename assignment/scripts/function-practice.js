@@ -22,19 +22,20 @@ console.log(helloName('Biscuit'));
 // 3. Function to add two numbers together & return the result
 function addNumbers(firstNumber, secondNumber) {
   let answer = firstNumber + secondNumber;
+  console.log('Add these numbers:', firstNumber, secondNumber);
   return answer;
   // return firstNumber + secondNumber;
 }
-console.log(addNumbers, 1 + 2);
+console.log(addNumbers(1, 2));
 
-// 4. Function to multiply three numbers & return the result
+// 4. Function to multiply three numers & return the result
 function multiplyThree(firstNumber, secondNumber, thirdNumber) {
-  console.log(firstNumber, secondNumber, thirdNumber);
   let answer = firstNumber * secondNumber * thirdNumber;
+  console.log('Multiply these three numbers:', firstNumber, secondNumber, thirdNumber);
   return answer;
 }
 
-console.log(multiplyThree, 1 * 2 * 6);
+console.log(multiplyThree(1, 2, 6));
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
 function isPositive(number) {
@@ -75,12 +76,14 @@ function find(value, array) {
   console.log(value, array);
   for (i = 0; i < array.length; i++) {
     if (array[i] === value) {
+      //Remember not to compare things to themselves.
       return true;
     }
   }
   return false;
 }
-
+//Keep an eye on what line of code goes between which brackets.
+//Also watch syntax on console logs!
 console.log(find('cat', ['cat', 'dog', 'bird']));
 console.log(find('rat', ['cat', 'dog', 'bird']));
 console.log(find(3, [1, 2, 3]));

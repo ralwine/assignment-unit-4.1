@@ -29,6 +29,7 @@ console.log(addNumbers, 1 + 2);
 
 // 4. Function to multiply three numbers & return the result
 function multiplyThree(firstNumber, secondNumber, thirdNumber) {
+  console.log(firstNumber, secondNumber, thirdNumber);
   let answer = firstNumber * secondNumber * thirdNumber;
   return answer;
 }
@@ -37,6 +38,7 @@ console.log(multiplyThree, 1 * 2 * 6);
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
 function isPositive(number) {
+  console.log(number);
   if (number > 0) {
     return true;
   }
@@ -54,6 +56,7 @@ console.log('isPositive - should say false', isPositive(-3));
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
 function getLast(array) {
+  console.log(array);
   for (i = 0; i < array.length; i++) {
     if (i = array.length - 1) {
       return array[array.length - 1];
@@ -69,17 +72,19 @@ console.log(getLast([]));
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 function find(value, array) {
+  console.log(value, array);
   for (i = 0; i < array.length; i++) {
-    console.log(value, array);
-    if (value[i] === array[i]) {
+    if (array[i] === value) {
       return true;
     }
-  return false;
   }
+  return false;
 }
 
-console.log(find(['cat'],['cat', 'dog', 'bird']));
-console.log(find([4],[1,2,3]));
+console.log(find('cat', ['cat', 'dog', 'bird']));
+console.log(find('rat', ['cat', 'dog', 'bird']));
+console.log(find(3, [1, 2, 3]));
+console.log(find(4, [1, 2, 3]));
 
 // ----------------------
 // Stretch Goals

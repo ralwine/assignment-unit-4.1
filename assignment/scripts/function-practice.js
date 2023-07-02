@@ -34,7 +34,6 @@ function multiplyThree(firstNumber, secondNumber, thirdNumber) {
   console.log('Multiply these three numbers:', firstNumber, secondNumber, thirdNumber);
   return answer;
 }
-
 console.log(multiplyThree(1, 2, 6));
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
@@ -67,8 +66,8 @@ function getLast(array) {
     }
   }
 }
-console.log(getLast([1, 4, 8]));
-console.log(getLast([]));
+console.log('Should say 8:', getLast([1, 4, 8]));
+console.log('Should say undefined:', getLast([]));
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
@@ -84,10 +83,10 @@ function find(value, array) {
 }
 //Keep an eye on what line of code goes between which brackets.
 //Also watch syntax on console logs!
-console.log(find('cat', ['cat', 'dog', 'bird']));
-console.log(find('rat', ['cat', 'dog', 'bird']));
-console.log(find(3, [1, 2, 3]));
-console.log(find(4, [1, 2, 3]));
+console.log('Should say true:', find('cat', ['cat', 'dog', 'bird']));
+console.log('Should say false:', find('rat', ['cat', 'dog', 'bird']));
+console.log('Should say true:', find(3, [1, 2, 3]));
+console.log('Should say false:', find(4, [1, 2, 3]));
 
 // ----------------------
 // Stretch Goals
